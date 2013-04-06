@@ -8,3 +8,8 @@
    summing (if (evenp fib-n-minus1)
                fib-n-minus1
                0))
+
+;; took 8 microseconds (0.000008 seconds) to run.
+;; During that period, and with 2 available CPU cores,
+;;      8 microseconds (0.000008 seconds) were spent in user mode
+;;      9 microseconds (0.000009 seconds) were spent in system mode
