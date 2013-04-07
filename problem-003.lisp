@@ -2,12 +2,9 @@
 
 (defun primep (n)
   "Prime number predicate."
-  (cond ((or (< n 2))
-         nil)
-        ((= n 2)
-         t)
-        ((zerop (mod n 2)) 
-         nil)
+  (cond ((< n 2) nil)
+        ((= n 2) t)
+        ((zerop (mod n 2)) nil)
         (t
          (loop for i from 3 upto (sqrt n) by 2
             never (zerop (mod n i))))))
