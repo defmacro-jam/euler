@@ -1,6 +1,8 @@
 
 ;;;; Problem 007
 
+(load #p"/Users/michael/src/euler/util.lisp")
+
 ;; State-of-the-art seems to be the Sieve of Atkin, but brute force, I
 ;; think, is fine here.
 
