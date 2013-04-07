@@ -19,3 +19,9 @@ sum of the squares of all the first num natural numbers."
                                        number-list))))
     (- square-of-sum
        sum-of-squares)))
+
+;; took 18 microseconds (0.000018 seconds) to run.
+;; During that period, and with 2 available CPU cores,
+;;      18 microseconds (0.000018 seconds) were spent in user mode
+;;       7 microseconds (0.000007 seconds) were spent in system mode
+;;  3,216 bytes of memory allocated.
