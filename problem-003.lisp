@@ -1,14 +1,6 @@
 ;;;; Problem 3
 
-(defun primep (n)
-  "Prime number predicate."
-  (cond ((< n 2) nil)
-        ((= n 2) t)
-        ((zerop (mod n 2)) nil)
-        (t
-         (loop for i from 3 upto (sqrt n) by 2
-            never (zerop (mod n i))))))
-
+(load #p"/Users/michael/src/euler/util.lisp")
 
 (defun largest-prime-factor (n)
   "Returns the largest prime factor of n."
