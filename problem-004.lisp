@@ -5,8 +5,6 @@
     (string= as-string
              (reverse as-string))))
 
-
-
 ;;;; When in doubt, use brute force
 ;;;;                                --Uncle Ken
 
