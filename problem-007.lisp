@@ -6,12 +6,14 @@
 ;; State-of-the-art seems to be the Sieve of Atkin, but brute force, I
 ;; think, is fine here.
 
-(nth 10000
-     (remove-if #'zerop 
-                (loop for i upto 105000
-                   collecting (if (primep i)
-                                  i
-                                  0))))
+(defun ten-thousand-first-prime ()
+  "Returns the 10,001st prime number."
+  (nth 10000
+       (remove-if #'zerop 
+                  (loop for i upto 105000
+                     collecting (if (primep i)
+                                    i
+                                    0)))))
 
 ;; took 156,250 microseconds (0.156250 seconds) to run.
 ;;       12,632 microseconds (0.012632 seconds, 8.08%) of which was spent in GC.
