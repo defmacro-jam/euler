@@ -4,7 +4,7 @@
 ;;;; Straight-forward iterative accumulation of fibonacci numbers,
 ;;;; summing evens.
 
-(defun even-fibonacci-numbers-upto (limit)
+(defun sum-of-even-fibonaccis-upto (limit)
   "Returns the sum of the even-valued fibonacci numbers
 less than or equal to limit."
   (loop for fib-n-minus2 = 0 then fib-n-minus1
