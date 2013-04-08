@@ -5,17 +5,22 @@
     (string= as-string
              (reverse as-string))))
 
+
 ;;;; When in doubt, use brute force
 ;;;;                                --Uncle Ken
 
-(let ((answer 0))
-  (loop for i upto 999
-     do (loop for j upto 999
+(defun largest-palindrome-product (limit)
+  "Returns the largest palindrome made from the product of two 3-digit numbers."
+  (let ((answer 0))
+  (loop for i upto limit
+     do (loop for j upto limit
            do (when (and (palindromep (* i j))
                          (> (* i j)
                             answer))
                 (setf answer (* i j)))))
-  answer)
+  answer))
+
+(largest-palindrome-product 999)
 
 ;; took 5,657,818 microseconds (5.657818 seconds) to run.
 ;;        348,404 microseconds (0.348404 seconds, 6.16%) of which was spent in GC.
