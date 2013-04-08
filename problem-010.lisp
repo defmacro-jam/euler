@@ -1,5 +1,8 @@
 ;;;; Problem 10
 
+(load #p"/Users/michael/src/euler/util.lisp")
+
+
 (defun sum-primes-upto (limit)
   "Returns the sum of all prime numbers up to limit."
   (reduce #'+
