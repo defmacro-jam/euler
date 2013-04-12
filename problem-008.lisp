@@ -30,28 +30,23 @@
                        #'digit-char-p
                        (remove-if-not #'digit-char-p
                                       (coerce *block* 'list))))
-         (high-score 0)
          (cursor (make-array 5
                              :adjustable t
                              :displaced-to numbers
                              :displaced-index-offset 0)))
-    (loop for i upto (- (length numbers)
-                         (length cursor))
-       do (progn
-            (adjust-array cursor
-                          5
-                          :displaced-to numbers
-                          :displaced-index-offset i)
-            (when (> (reduce #'* cursor)
-                     high-score)
-              (setf high-score
-                    (reduce #'* cursor)))))
-    high-score))
+    (apply #'max
+           (loop for i upto (- (length numbers)
+                               (length cursor))
+              collecting (progn
+                           (adjust-array cursor
+                                         5
+                                         :displaced-to numbers
+                                         :displaced-index-offset i)
+                           (reduce #'* cursor))))))
 
-;; took 602 microseconds (0.000602 seconds) to run.
+
 ;; During that period, and with 8 available CPU cores,
-;;      543 microseconds (0.000543 seconds) were spent in user mode
-;;       19 microseconds (0.000019 seconds) were spent in system mode
-;;  72,672 bytes of memory allocated.
-
+;;      496 microseconds (0.000496 seconds) were spent in user mode
+;;        4 microseconds (0.000004 seconds) were spent in system mode
+;;  88,624 bytes of memory allocated.
 
