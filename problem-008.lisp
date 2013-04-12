@@ -26,6 +26,7 @@
 
 
 (defun largest-product (series)
+  "Returns the greatest product of five consecutive digits in series."
   (let* ((numbers (map 'vector
                        #'digit-char-p
                        (remove-if-not #'digit-char-p
