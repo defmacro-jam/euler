@@ -32,4 +32,3 @@ Uses method described at http://betterexplained.com/articles/techniques-for-addi
 ;; During that period, and with 8 available CPU cores,
 ;;      10 microseconds (0.000010 seconds) were spent in user mode
 ;;       6 microseconds (0.000006 seconds) were spent in system mode
-;; 233168

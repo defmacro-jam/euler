@@ -31,4 +31,3 @@
 ;;      4,135 microseconds (0.004135 seconds) were spent in user mode
 ;;         34 microseconds (0.000034 seconds) were spent in system mode
 ;;  108,448 bytes of memory allocated.
-;; 6857

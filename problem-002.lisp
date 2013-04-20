@@ -22,5 +22,3 @@ less than or equal to limit."
 ;; During that period, and with 8 available CPU cores,
 ;;      8 microseconds (0.000008 seconds) were spent in user mode
 ;;      5 microseconds (0.000005 seconds) were spent in system mode
-;; 4613732
-
