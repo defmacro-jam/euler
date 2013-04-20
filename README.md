@@ -12,6 +12,6 @@ parentheses round off all the sharp edges.
 Not as clumsy or as random as a blaster. An elegant language for a 
 more civilized age... 
 
-And if I can't use it at work I may as well use it for fun.
+I figure if I can't use it at work I may as well use it for fun.
 
  
