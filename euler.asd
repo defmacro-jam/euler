@@ -8,5 +8,9 @@
   :components ((:file "package")
                (:file "euler")
                (:file "util")
-               (:file "problem-001")))
+               (:file "problem-001")
+               (:file "problem-002")
+               (:file "problem-003")
+               (:file "problem-004")
+               (:file "problem-005")))
 
