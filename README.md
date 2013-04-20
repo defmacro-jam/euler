@@ -1,5 +1,6 @@
 
-= Euler =
+Euler
+=====
 
 These are my solutions for Project Euler.
 
