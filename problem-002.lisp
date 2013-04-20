@@ -2,7 +2,7 @@
 
 
 (defun problem-002 ()
-  (sum-of-even-fibonaccis-upto 4000000))g
+  (sum-of-even-fibonaccis-upto 4000000))
 
 
 (defun sum-of-even-fibonaccis-upto (limit)
