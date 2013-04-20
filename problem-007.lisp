@@ -1,6 +1,5 @@
 ;;;; Problem 007
 
-
 ;; State-of-the-art seems to be the Sieve of Atkin, but brute force, I
 ;; think, is fine here.
 

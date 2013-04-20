@@ -6,9 +6,7 @@
 
 
 (defun smallest-multiple-of-integers-upto (limit)
-  "Returns smallest positive number that is evenly divisible by all of the numbers from 1 to to limit.
-
-Using prime factorization as described at http://en.wikipedia.org/wiki/Least_common_multiple"
+  "Returns smallest positive number that is evenly divisible by all of the numbers from 1 to to limit."
   (assert (integerp limit)
           (limit))
   (let* ((primes (prime-numbers-upto limit))

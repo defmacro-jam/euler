@@ -12,9 +12,7 @@
 
 
 (defun sum-of-integers-below (limit &key (that-are-multiples-of 1))
-  "Returns the sum of multiples below limit.
-
-Uses method described at http://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/"
+  "Returns the sum of multiples below limit."
   (let ((mult that-are-multiples-of))
     (assert (and (integerp limit)
                  (integerp mult))
