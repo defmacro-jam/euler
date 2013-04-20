@@ -6,7 +6,7 @@
 
 
 (defun smallest-multiple-of-integers-upto (limit)
-  "Returns smallest positive number that is evenly divisible by all of the numbers from 1 to to limit."
+  "Returns smallest positive number that is evenly divisible by all of the numbers from 1 to limit."
   (assert (integerp limit)
           (limit))
   (let* ((primes (prime-numbers-upto limit))
