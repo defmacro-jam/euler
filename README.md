@@ -1,12 +1,15 @@
 
-These are just my solutions for Project Euler.
+= Euler =
 
-Probably only interesting if you're interested in rickety old
-programming languages with PR problems.
+These are my solutions for Project Euler.
+
+Probably only interesting if you like ancient programming languages.
 
 Ooh, but if you *are* interested - note how pretty code is when
-parentheses are there to round off all the sharp edges.  IMHO, Lisp is
-beautiful in every sense of the word.
+parentheses round off all the sharp edges.  
+
+Not as clumsy or as random as a blaster. An elegant language for a 
+more civilized age... 
 
 And if I can't use it at work I may as well use it for fun.
 
