@@ -2,11 +2,13 @@
 
 
 (defun problem-009 ()
+  "Returns the product of abc for pythagorean triplet."
   (reduce #'*
           (pythagorean-triplet 1000)))
 
 
 (defun pythagorean-triplet (sum)
+  "Returns a special pythagorean triplet where a + b + c = sum."
   (let ((answer nil))
     (loop for a from 1 upto (/ sum 3)
      do (loop for b from 1 upto (/ sum 2)
