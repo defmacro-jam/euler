@@ -20,10 +20,6 @@ sum of the squares of all the first num natural numbers."
        sum-of-squares)))
 
 
-(defun square (x)
-  "Returns the square of x."
-  (* x x))
-
 
 ;; (PROBLEM-006)
 ;; took 15 microseconds (0.000015 seconds) to run.

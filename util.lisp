@@ -1,3 +1,10 @@
+;;;; utilities
+
+
+(defun square (x)
+  "Returns the square of x."
+  (* x x))
+
 
 (defun prime-factors (num)
   "Returns prime factors of number."
@@ -8,7 +15,6 @@
                 collecting (if (zerop (mod num p))
                                p
                                0))))
-
 
 
 (defun prime-numbers-upto (limit)
